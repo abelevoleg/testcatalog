@@ -13,7 +13,7 @@
 
 <body>
 <h1>Продукт</h1>
-<form th:action="@{/products/edit}" th:object="${product}" method="POST">
+<form th:object="${product}">
     Id: <td th:text="*{id}"></td>
     <br>
     Name: <td th:text="*{title}"></td>
